@@ -1,0 +1,17 @@
+<table class="table table-hover">
+    <thead>
+          <tr>
+              <td>ID</td>
+              <td>Title</td>
+              <td>Description</td>
+          </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let vid of videos " (click)="onSelect(vid)">
+            <td>{{vid.id}}</td>
+            <td>{{vid.title}}</td>
+            <td>{{vid.desc}}</td>
+        </tr>
+    </tbody>
+</table>
